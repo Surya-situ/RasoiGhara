@@ -271,19 +271,45 @@ const items = [
     }
 ];
 
+// ********** menu setction *************
+// selecting the elements for menu btn section
+const menuBtnSelector = document.querySelectorAll('.menu-btn-link');
 // selecting the elements for menu section
-const menuBtnSelector = document.querySelector('.menu-header-btn')
 const sectionMenu = document.querySelector('.section-menu');
 
 window.addEventListener('DOMContentLoaded', ()=> {
     // callback function
     displayMenuitems(items);
+    
 })
+
+// ********** filtering items: **********
+menuBtnSelector.forEach( function(btn) {
+    btn.addEventListener('click', function(e){
+        // targeting the id in the menu html button to get the id 
+        const category = e.currentTarget.dataset.id;
+
+        // filtering the items as per the category
+        const menuCategory = items.filter(function(menuItem) {
+            if(menuItem.category === category){
+                return menuItem;
+            }
+        });
+
+        // displaying items
+        if(category === 'all') {
+            displayMenuitems(items);
+        } else {
+            displayMenuitems(menuCategory);
+        }
+    });
+});
+// ********** filtering items: (ends)**********
+
 
 // showing all items:
 function displayMenuitems (menuitems) {
     let displayMenu = menuitems.map(function (item) {
-        
         
         return `
             <article class="meal">
@@ -313,46 +339,7 @@ function displayMenuitems (menuitems) {
     sectionMenu.innerHTML = displayMenu;
 };
 
-// selecting items as per buttons
-function displayBtnSelection () {
-    const categories = items.reduce(
-        function(value, item){
-            if(!value.includes(item.category)){
-                value.push(item.category)
-            }
-            return value;
-        }
-        ['all']
-    );
-
-    const categoryBtn = categories.map(
-        function(category) {
-            return `<a class="menu-btn-link" data-id=${category}>${category}</a>`
-        }
-    ).join('');
-
-    menuBtnSelector.innerHTML = categoryBtn;
-    const filterBtn = menuBtnSelector.querySelectorAll('.menu-btn-link');
-
-    filterBtn.forEach(function(btn) {
-        btn.addEventListener('click', function(event) {
-            const category = event.currentTarget.dataset.id;
-
-            const menuCategory = items.filter(function(menuItem) {
-
-                if(menuItem.category === category) {
-                    return menuItem;
-                }
-            });
-            if(category === "all"){
-                menuBtnSelector(items);
-            } else {
-                menuBtnSelector(menuCategory)
-            }
-        })
-    })
-    
-}
+// ********** menu setction (ends)*************
 
 
 // ********** sliding cards for home screen **********
