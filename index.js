@@ -184,7 +184,7 @@ const items = [
         title: 'Ice-cream brownie',
         price: 80,
         img: './imgs/snacks/brownie-ice-cream.jpg',
-        category: 'snacks',
+        category: 'starter',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 5
     },
@@ -193,7 +193,7 @@ const items = [
         title: 'burger $ fries',
         price: 120,
         img: './imgs/snacks/burger-fries.jpg',
-        category: 'nonveg',
+        category: 'starter',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 5
     },
@@ -202,7 +202,7 @@ const items = [
         title: 'Chicken burger',
         price: 110,
         img: './imgs/nonveg/egg-curry.jpg',
-        category: 'nonveg',
+        category: 'starter',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 4
     },
@@ -211,7 +211,7 @@ const items = [
         title: 'Chicken pakoda',
         price: 120,
         img: './imgs/snacks/chicken-pakoda.jpg',
-        category: 'nonveg',
+        category: 'starter',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 5
     },
@@ -220,7 +220,7 @@ const items = [
         title: 'Veg momos',
         price: 70,
         img: './imgs/snacks/veg-momo.jpg',
-        category: 'nonveg',
+        category: 'starter',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 5
     },
@@ -229,7 +229,7 @@ const items = [
         title: 'Idli bara',
         price: 30,
         img: './imgs/indian-breakfast/bara.jpg',
-        category: 'nonveg',
+        category: 'breakfast',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 5
     },
@@ -238,7 +238,7 @@ const items = [
         title: 'Chilla',
         price: 10,
         img: './imgs/indian-breakfast/chilla.jpg',
-        category: 'nonveg',
+        category: 'breakfast',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 5
     },
@@ -247,7 +247,7 @@ const items = [
         title: 'Dosa',
         price: 40,
         img: './imgs/indian-breakfast/dosa.jpg',
-        category: 'nonveg',
+        category: 'breakfast',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 5
     },
@@ -256,7 +256,7 @@ const items = [
         title: 'Pakodi',
         price: 20,
         img: './imgs/indian-breakfast/pakadi.jpg',
-        category: 'nonveg',
+        category: 'breakfast',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 5
     },
@@ -265,7 +265,7 @@ const items = [
         title: 'Piaji',
         price: 20,
         img: './imgs/indian-breakfast/piaji.jpg',
-        category: 'nonveg',
+        category: 'breakfast',
         description: 'Delicious authentic indian spicy egg curry made with handmade spices, and eggs from free ranch hens.',
         stars: 4
     }
